@@ -2,4 +2,5 @@
 library fly_widget;
 
 export 'src/extensions/extensions.dart';
+export 'src/fly_extensions.dart';
 export 'src/widgets/fly_widgets.dart';
