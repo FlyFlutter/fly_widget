@@ -6,7 +6,12 @@ import 'package:fly_widget/fly_widget.dart';
 void main() {
   group('FlyWidget', () {
     test('can be instantiated', () {
-      expect(FlyWidget(), isNotNull);
+      expect(
+        FlyButton<FlyPositiveButtonExtension>(
+          text: 'hello',
+        ),
+        isNotNull,
+      );
     });
   });
 }
