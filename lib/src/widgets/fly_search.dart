@@ -30,11 +30,11 @@ class _FlySearchState extends State<FlySearch> {
           SizedBox(
             width: 200,
             child: TextFormField(
-              decoration: const InputDecoration(
-                suffixIcon: Icon(
-                  Icons.search,
-                ),
-              ),
+              // decoration: const InputDecoration(
+              //   suffixIcon: Icon(
+              //     Icons.search,
+              //   ),
+              // ),
               controller: _controller,
               validator: (value) {
                 if (value == null || value.isEmpty) {
