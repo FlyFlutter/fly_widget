@@ -89,7 +89,12 @@ class _FlyButtonState<T extends FlyButtonExtension<T>>
           backgroundColor: MaterialStateProperty.resolveWith<Color>(
               (Set<MaterialState> states) {
             if (states.contains(MaterialState.disabled)) {
-              return Colors.grey;
+              if (buttonExtension is FlyPositiveButtonExtension) {
+                return buttonExtension?.backgroundColor?.withOpacity(0.6) ??
+                    Colors.grey;
+              } else {
+                return Colors.grey;
+              }
             } else {
               return widget.backgroundColor ??
                   buttonExtension?.backgroundColor ??
