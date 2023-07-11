@@ -255,7 +255,7 @@ class FlyNegativeButtonExtension
 class FlyTextButtonExtension
     extends FlyButtonExtension<FlyTextButtonExtension> {
   ///
-  FlyTextButtonExtension({
+  const FlyTextButtonExtension({
     this.textColor,
   });
 
