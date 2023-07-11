@@ -1,6 +1,6 @@
 name: fly_widget
 description: A Very Good Project created by Very Good CLI.
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/FlyFlutter/fly_widget
 
 environment:
